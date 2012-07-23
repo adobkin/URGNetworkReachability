@@ -1,7 +1,8 @@
 URGNetworkReachability
 ======================
 
-ARC and non-ARC compatible simple URGNetworkReachability is  simple class for monitoring Reachability of network for iOS. Class compatible with ARC and non-ARCURGNetworkReachability Class for iOS
+URGNetworkReachability is  simple class for monitoring Reachability of network for iOS. 
+Class compatible with ARC and non-ARC
 
 ## A Simple example
     URGNetworkReachability *reach = [[URGNetworkReachability alloc] init];
