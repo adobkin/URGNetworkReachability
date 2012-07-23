@@ -23,4 +23,8 @@ Class compatible with ARC and non-ARC
       };
 				
       [reach startNotifier];
-    
+
+## Use
+
+    - Add URGNetworkReachability.h and URGNetworkReachability.m files to your project 
+    - Add SystemConfiguration.framework to your project
