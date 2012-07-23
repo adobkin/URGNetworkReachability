@@ -9,18 +9,18 @@ Class compatible with ARC and non-ARC
 	
       // set the block
       reach.reachabilityChangedBlock = ^(URGNetworkReachability *reach) {
-      NSString *status = nil;
-      if (reach.isReacheble) {
-          if (reach.isReachebleViaWiFi) {
-            status = @"network is reachable via WiFi";
+          NSString *status = nil;
+          if (reach.isReacheble) {
+             if (reach.isReachebleViaWiFi) {
+                status = @"network is reachable via WiFi";
+             } else {
+                status = @"network is reachable via Cellular";
+             }
           } else {
-            status = @"network is reachable via Cellular";
+             status = @"network is unreachable";
           }
-       } else {
-          status = @"network is unreachable";
-       }
-       NSlog(@"%@", status);
-    };
+          NSLog(@"%@", status);
+      };
 				
-[reach startNotifier];
+      [reach startNotifier];
     
