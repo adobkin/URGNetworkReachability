@@ -58,8 +58,8 @@
     do { \
         size_t addr_len = sizeof(addr);\
         memset(&addr, 0, addr_len); \
-        address.sin_len = addr_len; \
-        address.sin_family = AF_INET; \
+        addr.sin_len = addr_len; \
+        addr.uin_family = AF_INET; \
     } while(0);
 
 
