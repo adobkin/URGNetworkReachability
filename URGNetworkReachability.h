@@ -29,6 +29,8 @@
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <Foundation/Foundation.h>
 
+NSString *const URGNetworkReachabilityChangedNotification;
+
 @class URGNetworkReachability;
 
 typedef void (^URGNetworkReachabilityChanged)(URGNetworkReachability * status);
